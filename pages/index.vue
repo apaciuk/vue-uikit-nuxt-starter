@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
+      <img src="../assets/images/front.svg" />
+      <h2>
         vue-uikit-nuxt-starter
-      </h1>
+      </h2>
       <div class="links">
         <a
           href="https://nuxtjs.org/"

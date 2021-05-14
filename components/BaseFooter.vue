@@ -3,9 +3,9 @@
             <div class="uk-container uk-container-center uk-text-center">
 
                 <ul class="uk-subnav uk-subnav-line uk-flex-center">
-                    <li><a href="https://github.com/xhostcom/friendslist.git">GitHub</a></li>
-                    <li><a href="https://github.com/xhostcom/friendslist/issues">Issues</a></li>
-                    <li><a href="https://github.com/xhostcom/friendslist/wiki">Wiki</a></li>
+                    <li><a href="https://github.com/xhostcom/vue-uikit-nuxt-starter.git">GitHub</a></li>
+                    <li><a href="https://github.com/xhostcom/vue-uikit-nuxt-starter.git/issues">Issues</a></li>
+                    <li><a href="https://github.com/xhostcom/vue-uikit-nuxt-starter.git/wiki">Wiki</a></li>
                     <li><a href="https://gab.com/deepstatereality">Gab</a></li>
                 </ul>
 

@@ -1,3 +1,4 @@
+import UIkit from 'uikit'
 const util = UIkit.util;
 const search = util.$('.search-fld');
 const searchVal = util.$('.search-filter');
