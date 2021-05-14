@@ -53,7 +53,10 @@ plugins: [
     }
   },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+ axios: {
+    // extra config e.g
+    // BaseURL: 'https://link-to-API'
+ },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
