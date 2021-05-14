@@ -2,6 +2,25 @@
   "name": "vue-uikit-nuxt-starter",
   "version": "1.0.0",
   "private": true,
+  "description": "Vue starter using UIKit 3, Nuxt Js and Vue JS, Auth0, Axios, PWA, Jest, with Off Canvas and other UIKit components",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xhostcom/vue-uikit-nuxt-starter.git"
+  },
+  "keywords": [
+    "vue",
+    "nuxt",
+    "uikit",
+    "axios",
+    "pwa",
+    "auth0"
+  ],
+  "author": "Paul Anthony McGowan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xhostcom/vue-uikit-nuxt-starter/issues"
+  },
+  "homepage": "https://github.com/xhostcom/vue-uikit-nuxt-starter#readme",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
