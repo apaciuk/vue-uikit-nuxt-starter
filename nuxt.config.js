@@ -11,29 +11,26 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ]
   },
-
- // Global CSS: https://go.nuxtjs.dev/config-css
- css: [
-  // Main UIkit CSS file
-  '@assets/css/uikit.css',
+// Global CSS: https://go.nuxtjs.dev/config-css
+css: [
+  // Main UIkit file
+  'uikit/dist/css/uikit.min.css',
   //Custom UIkit
-  '@assets/css/style.css',
+  '@assets/custom.css',
 ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: '~/plugins/uikit', ssr: false }],
-
+// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+plugins: [
+  { src: '~/plugins/uikit', ssr: false },
+  { src: '~/plugins/cards', ssr: false }
+],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
-  ],
+  buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -42,7 +39,19 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa'
   ],
-
+  auth: {
+    redirect: {
+      login: '/', // redirect user when not connected
+      callback: '/auth/signed-in'
+    },
+    strategies: {
+      local: false,
+      auth0: {
+        domain: process.env.AUTH0_DOMAIN,
+        client_id: process.env.AUTH0_CLIENT_ID
+      }
+    }
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
@@ -52,8 +61,8 @@ export default {
       lang: 'en'
     }
   },
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+    // For stormkit.io
+    publicPath: process.env.PUBLIC_PATH,
+}
 }
