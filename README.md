@@ -1,5 +1,24 @@
 # vue-uikit-nuxt-starter
 
+Vue Starter with Vue Nuxt UIKit Axios set up and some other useful card components, easily altered basic templates for different designs with UIKit (or others)
+
+# Demo sandbox view
+
+https://hnbzj.sse.codesandbox.io/
+
+# Code sandbox view
+
+https://codesandbox.io/s/loving-allen-hnbzj
+
+# System Requirements
+
+Node >14.00
+NPM  >7.00
+Yarn  recent
+
+Others on install.
+
+
 ## Build Setup
 
 ```bash
